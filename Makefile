@@ -26,7 +26,7 @@ else
     PATHSEP := /
 endif
 
-CFG ?= Debug
+#CFG ?= Debug
 ifeq ($(CFG),Debug)
     all: debug
 else
@@ -80,9 +80,9 @@ $(RELEASE)/%.dep: %.cpp
 
 endif
 
-CC  = arm-linux-gnueabi-gcc
-CXX = arm-linux-gnueabi-g++
-AR  = arm-linux-gnueabi-ar
+#CC  = arm-linux-gnueabi-gcc
+#CXX = arm-linux-gnueabi-g++
+#AR  = arm-linux-gnueabi-ar
 LD  = $(CXX) $(CXXFLAGS) $(TARGET_ARCH)
 
 INCLUDE  = -I. $(patsubst %,-I%,$(VPATH))

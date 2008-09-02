@@ -1,0 +1,17 @@
+Source: linebreak
+Section: libdevel
+Priority: optional
+Maintainer: Alexander Kerner <lunohod@gmx.de>
+Standards-Version: 3.7.2
+Build-Depends: debhelper (>= 5.0.22)
+XCS-Cross-Host-Build-Depends: debhelper (>= 5.0.22)
+XCS-Cross-Build-Depends: 
+XS-Vcs-Git: http://git.openinkpot.org/linebreak.git
+XS-Vcs-Browser: http://git.openinkpot.org/linebreak.git
+
+Package: liblinebreak-dev
+Priority: optional
+Architecture: any
+Description: linebreak library
+ Implementation of the line breaking algorithm as described in Unicode
+ 5.0.0 Standard Annex 14.
