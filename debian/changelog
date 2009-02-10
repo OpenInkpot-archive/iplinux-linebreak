@@ -1,3 +1,9 @@
+linebreak (1.0.0-1) stable; urgency=low
+
+  * merged with upstream
+
+ -- Alexander Kerner <lunohod@openinkpot.org>  Tue, 10 Feb 2009 15:15:31 +0100
+
 linebreak (0.0.0-1) stable; urgency=low
 
   * initial packaging

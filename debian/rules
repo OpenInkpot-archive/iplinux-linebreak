@@ -11,6 +11,7 @@ build-stamp:
 		dh_testdir
 		echo $(CURDIR)
 		cd $(CURDIR)
+		./configure --host=$(DEB_HOST_GNU_TYPE) --enable-shared=no
 		make
 		touch build-stamp 
 
@@ -24,7 +25,7 @@ install-stamp: build
 		mkdir -p $(DEB_DIR)/liblinebreak-dev/usr/include
 		mkdir -p $(DEB_DIR)/liblinebreak-dev/usr/lib
 		install -m 644 linebreak.h $(DEB_DIR)/liblinebreak-dev/usr/include/
-		install -m 644 ReleaseDir/liblinebreak.a $(DEB_DIR)/liblinebreak-dev/usr/lib
+		install -m 644 .libs/liblinebreak.a $(DEB_DIR)/liblinebreak-dev/usr/lib
 		touch install-stamp
 
 binary-arch: VERSION=$(shell expr "`dpkg-parsechangelog |grep Version:`" : '.*Version: \(.*\)')
