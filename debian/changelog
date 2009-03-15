@@ -1,3 +1,9 @@
+linebreak (1.0.0-2) asimov; urgency=low
+
+  * First IPlinux build
+
+ -- Alexander Kerner <lunohod@openinkpot.org>  Sun, 15 Mar 2009 11:13:34 +0100
+
 linebreak (1.0.0-1) stable; urgency=low
 
   * merged with upstream
